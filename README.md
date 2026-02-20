@@ -1,35 +1,36 @@
 # Artistic Portfolio (React)
 
-This project follows the same setup style as `SBleeyouk.github.io`:
+This is a single-page portfolio with:
 
-- React + React Router
-- styled-components for layout/styles
-- framer-motion for page transitions
-- GitHub Pages deployment using `gh-pages`
+- artistic hero section
+- about section
+- projects section
+- contact section
 
-## 1) Configure for your repo
+## Personalize quickly
 
-Open `package.json` and update:
+Edit only one file:
 
-- `homepage` to your real URL, for example:
-  - `https://yourusername.github.io` for a user site repo named `yourusername.github.io`
-  - `https://yourusername.github.io/your-repo-name` for a project site
+- `src/content/siteContent.js`
+- `public/assets/profile-art.png` (your portrait art file)
 
-## 2) Run locally
+You can update your:
+
+- name and hero text
+- about paragraphs
+- skills/bullets
+- projects list
+- contact links and email
+
+## Run locally
 
 ```bash
 npm install
 npm start
 ```
 
-## 3) Deploy to GitHub Pages
+## Deploy to GitHub Pages
 
 ```bash
 npm run deploy
 ```
-
-## Files to edit first
-
-- `src/components/Landing.jsx` (hero text, diagram labels, intro cards)
-- `src/components/Projects.jsx`
-- `src/components/About.jsx`

@@ -8,8 +8,6 @@ import {
   useLocation
 } from "react-router-dom";
 import Landing from "./components/Landing";
-import Projects from "./components/Projects";
-import About from "./components/About";
 import ScrollToTop from "./components/ScrollToTop";
 
 function AnimatedRoutes() {
@@ -20,8 +18,8 @@ function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Navigate to="/saetbyeol" replace />} />
         <Route path="/saetbyeol" element={<Landing />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Navigate to="/saetbyeol#projects" replace />} />
+        <Route path="/about" element={<Navigate to="/saetbyeol#about" replace />} />
       </Routes>
     </AnimatePresence>
   );

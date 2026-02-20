@@ -37,7 +37,7 @@ const siteContent = {
   },
   about: {
     title: "About",
-    portraitSrc: "/assets/faezeh.png",
+    portraitSrc: `${process.env.PUBLIC_URL}/assets/faezeh.png`,
     portraitAlt: "Portrait of Faezeh Ataeizadeh",
     portraitCaption: "",
     intro: "I want to design things that help people think clearly.",
