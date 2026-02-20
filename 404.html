@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      var base = "%PUBLIC_URL%";
+      if (!base || base === ".") {
+        base = "";
+      }
+
+      var route = window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace(
+        window.location.origin + base + "/?p=" + encodeURIComponent(route)
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
