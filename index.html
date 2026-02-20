@@ -1,163 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#4d6a53" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Landing</title>
     <meta
       name="description"
-      content="Faezeh Ataeizadeh portfolio - UX design, HCI research, and interactive product concepts."
+      content="An artistic portfolio landing page with a soft generative background."
     />
-    <title>Faezeh Ataeizadeh | Portfolio</title>
-    <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a href="#home" class="brand">Faezeh Ataeizadeh</a>
-      <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
-        Menu
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <main class="hero">
+      <nav class="top-nav">
+        <a href="#" class="brand">YOUR NAME</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#about">ABOUT</a>
       </nav>
-    </header>
 
-    <main>
-      <section id="home" class="section hero" data-reveal>
-        <div class="hero-media floral-frame">
-          <img src="./assets/ui/onboarding-1.png" alt="Featured creative artwork" />
+      <section class="center-content">
+        <p class="kicker">Explore Intersecting Areas</p>
+
+        <div class="venn-shell" role="img" aria-label="Three intersecting focus areas">
+          <svg viewBox="0 0 620 520" class="venn-svg">
+            <circle cx="310" cy="170" r="150" />
+            <circle cx="210" cy="290" r="150" />
+            <circle cx="410" cy="290" r="150" />
+
+            <text x="310" y="115" class="small" text-anchor="middle">TOWARD</text>
+            <text x="310" y="165" class="label" text-anchor="middle">Social Justice</text>
+
+            <text x="150" y="280" class="small" text-anchor="middle">OF</text>
+            <text x="195" y="330" class="label" text-anchor="middle">AI + DATA</text>
+
+            <text x="458" y="280" class="small" text-anchor="middle">BY</text>
+            <text x="430" y="330" class="label" text-anchor="middle">Scalable</text>
+            <text x="430" y="365" class="label" text-anchor="middle">Interaction</text>
+
+            <line x1="310" y1="220" x2="310" y2="505" class="center-line" />
+          </svg>
         </div>
 
-        <article class="hero-copy floral-card">
-          <p class="eyebrow">Home</p>
-          <h1>Hi! I am Faezeh. /Fay-zah/</h1>
-          <p class="nickname">(my friends call me FAY)</p>
-          <p>
-            A UX designer and HCI researcher based in Canada. In my design work, I value empathy,
-            harmony, and clarity.
-          </p>
-          <div class="hero-actions">
-            <a class="btn-primary" href="./resume.pdf" target="_blank" rel="noreferrer">Resume</a>
-            <a class="btn-secondary" href="#projects">Featured Projects</a>
-          </div>
-        </article>
-      </section>
-
-      <section id="about" class="section" data-reveal>
-        <article class="floral-card highlight-card">
-          <p class="eyebrow">About</p>
-          <h2>Redesign of Government of Canada Website</h2>
-          <p class="subtitle">
-            A research-driven UX project exploring how government website design and administrative
-            burdens shape citizens' trust in digital government and data use.
-          </p>
-          <ul class="detail-list">
-            <li>User interviews and journey mapping</li>
-            <li>Accessibility and information architecture review</li>
-            <li>Service blueprint and prototype recommendations</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="projects" class="section" data-reveal>
-        <div class="section-head">
-          <p class="eyebrow">Projects</p>
-          <h2>Featured Projects</h2>
-        </div>
-
-        <div class="filter-row" role="tablist" aria-label="Project filters">
-          <button class="filter-btn active" type="button" data-filter="all">All</button>
-          <button class="filter-btn" type="button" data-filter="app">App Concepts</button>
-          <button class="filter-btn" type="button" data-filter="research">Research</button>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card floral-card" data-category="app">
-            <img src="./assets/ui/world-acceptance.png" alt="Noor project screen" />
-            <div class="project-body">
-              <h3>Noor</h3>
-              <p>
-                Noor is an interactive grief-healing app that guides users through reflection,
-                journaling, and community support.
-              </p>
-              <div class="project-actions">
-                <button class="text-btn" type="button" data-project="noor">View Details</button>
-                <a class="text-btn" href="https://faeataei.github.io/Faezeh/" target="_blank" rel="noreferrer">Live Demo</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card floral-card" data-category="app">
-            <img src="./assets/ui/community-bg.png" alt="Lunedor project concept" />
-            <div class="project-body">
-              <h3>Lunedor</h3>
-              <p>
-                Lunedor is a period-tracking concept that helps users monitor cycles and understand
-                patterns with supportive insights.
-              </p>
-              <div class="project-actions">
-                <button class="text-btn" type="button" data-project="lunedor">View Details</button>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card floral-card" data-category="research">
-            <img src="./assets/ui/world-map.png" alt="Government redesign project visual" />
-            <div class="project-body">
-              <h3>Gov UX Redesign</h3>
-              <p>
-                Research-led service redesign exploring trust, usability, and equitable access across
-                public-sector digital touchpoints.
-              </p>
-              <div class="project-actions">
-                <button class="text-btn" type="button" data-project="govux">View Details</button>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" class="section" data-reveal>
-        <article class="floral-card contact-card">
-          <p class="eyebrow">Contact</p>
-          <h2>Why do not you say hi?</h2>
-          <p>Powered by creativity, not caffeine.</p>
-          <div class="contact-links">
-            <a href="mailto:faezeh@example.com">Email me</a>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com/faeataei" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
-        </article>
+        <h1>Your Name</h1>
+        <a class="cta" href="#about">
+          LEARN MORE
+          <span aria-hidden="true">↓</span>
+        </a>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>Faezeh Ataeizadeh</p>
-      <nav aria-label="Footer navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-      </nav>
-    </footer>
-
-    <dialog id="project-dialog" class="project-dialog" aria-label="Project details">
-      <button id="dialog-close" class="dialog-close" type="button" aria-label="Close">Close</button>
-      <p id="dialog-kicker" class="dialog-kicker"></p>
-      <h3 id="dialog-title"></h3>
-      <p id="dialog-body"></p>
-      <ul id="dialog-points"></ul>
-    </dialog>
-
-    <script src="./app.js" defer></script>
+    <script src="./script.js"></script>
   </body>
 </html>
