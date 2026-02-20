@@ -1,3 +1,5 @@
+import faezehPortrait from "../assets/faezeh.png";
+
 const siteContent = {
   brand: "FAEZEH",
   hero: {
@@ -37,7 +39,7 @@ const siteContent = {
   },
   about: {
     title: "About",
-    portraitSrc: `${process.env.PUBLIC_URL}/assets/faezeh.png`,
+    portraitSrc: faezehPortrait,
     portraitAlt: "Portrait of Faezeh Ataeizadeh",
     portraitCaption: "",
     intro: "I want to design things that help people think clearly.",

@@ -700,9 +700,7 @@ function Landing() {
           <PortraitCard>
             {portraitLoadError ? (
               <PortraitFallback>
-                Add your portrait file at
-                <br />
-                <strong>public/assets/profile-art.png</strong>
+                Portrait image failed to load.
               </PortraitFallback>
             ) : (
               <PortraitImage
