@@ -42,19 +42,23 @@ const siteContent = {
     portraitSrc: faezehPortrait,
     portraitAlt: "Portrait of Faezeh Ataeizadeh",
     portraitCaption: "",
-    intro: "I want to design things that help people think clearly.",
-    paragraphs: [
-      "Tools that reduce noise instead of adding to it.",
-      "Experiences that make complex systems visible.",
-      "Fewer, better digital things.",
-      "An intentional use of technology.",
-      "Better decisions by design."
+    sentences: [
+      "I research how people make decisions.",
+      "I study behavior within digital systems.",
+      "I work with both quantitative and qualitative data.",
+      "I design and run studies to uncover patterns and insights.",
+      "I use Python for analysis and statistical modeling.",
+      "I build interfaces using HTML, CSS, and JavaScript.",
+      "I design wireframes and prototypes in Figma.",
+      "I translate research into clear, actionable outcomes."
     ],
     bullets: []
   },
   projects: {
     title: "Selected Projects",
-    intro: "Add your own projects below. Keep each one short, visual, and impact-focused.",
+    intro: "",
+    moreLabel: "View More Projects",
+    moreLink: "#",
     items: [
       {
         title: "Project One",
@@ -82,10 +86,13 @@ const siteContent = {
   contact: {
     title: "Contact",
     subtitle: "Open to collaborations, research, and creative technology work.",
-    email: "youremail@example.com",
+    email: "faezehataeizadeh@gmail.com",
     links: [
       { label: "GitHub", url: "https://github.com/FaeAtaei" },
-      { label: "LinkedIn", url: "https://www.linkedin.com" }
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/in/faezeh-ataeizadeh-a4a63314a/"
+      }
     ]
   }
 };
