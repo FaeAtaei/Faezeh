@@ -1,5 +1,3 @@
-import faezehPortrait from "../assets/faezeh.png";
-
 const siteContent = {
   brand: "FAEZEH",
   hero: {
@@ -39,9 +37,8 @@ const siteContent = {
   },
   about: {
     title: "About",
-    portraitSrc: faezehPortrait,
+    portraitSrc: `${process.env.PUBLIC_URL}/assets/about.jpeg`,
     portraitAlt: "Portrait of Faezeh Ataeizadeh",
-    portraitCaption: "",
     sentences: [
       "I research how people make decisions.",
       "I study behavior within digital systems.",
@@ -52,7 +49,71 @@ const siteContent = {
       "I design wireframes and prototypes in Figma.",
       "I translate research into clear, actionable outcomes."
     ],
-    bullets: []
+    bullets: [],
+    intro:
+      "Hi! My name is Faezeh but most people call ma Fae! I design things that help people think clearly and act intentionally in digital environments.",
+    paragraphs: [
+      "My background combines quantitative and qualitative research, statistical analysis, and UX Design. I design and run surveys, interviews, and mixed-methods studies, then translate complex findings into practical, actionable insights.",
+      "One of my biggest passions in life is art. I live for art and creativity. Art is more than a hobby for me, and I've been expressing myself through it ever since I was a kid. I do both digital and physical art, including sketching, acrylic painting, and embroidery.",
+      {
+        before: "Oh and I love cats! ",
+        quote: "\"They're silly and cuddly and lonely and frightened and brave. Like us!\"",
+        url: "https://en.wikipedia.org/wiki/The_Electrical_Life_of_Louis_Wain",
+        after: ""
+      },
+      "I have a kitten named Moochie 🐈"
+    ],
+    galleryTitle: "My artsy gallary",
+    galleryItems: [
+      {
+        title: "My cluttered brain",
+        year: "2024",
+        image: `${process.env.PUBLIC_URL}/assets/art%20work/My%20cluttered%20brain.png`,
+        alt: "My cluttered brain artwork by Faezeh Ataeizadeh"
+      },
+      {
+        title: "The Persian girl",
+        year: "2024",
+        image: `${process.env.PUBLIC_URL}/assets/art%20work/The%20Persian%20girl.jpg`,
+        alt: "The Persian girl artwork by Faezeh Ataeizadeh"
+      },
+      {
+        title: "The boojie cat",
+        year: "2024",
+        image: `${process.env.PUBLIC_URL}/assets/art%20work/The%20boojie%20cat.jpg`,
+        alt: "The boojie cat artwork by Faezeh Ataeizadeh"
+      },
+      {
+        title: "The lonely",
+        year: "2024",
+        image: `${process.env.PUBLIC_URL}/assets/art%20work/The%20lonely.jpg`,
+        alt: "The lonely artwork by Faezeh Ataeizadeh"
+      },
+      {
+        title: "The smoking cat",
+        year: "2024",
+        image: `${process.env.PUBLIC_URL}/assets/art%20work/The%20smoking%20cat.jpg`,
+        alt: "The smoking cat artwork by Faezeh Ataeizadeh"
+      },
+      {
+        title: "IMG 5822",
+        year: "2024",
+        image: `${process.env.PUBLIC_URL}/assets/art%20work/IMG_5822.jpg`,
+        alt: "Artwork IMG 5822 by Faezeh Ataeizadeh"
+      },
+      {
+        title: "IMG 6746",
+        year: "2024",
+        image: `${process.env.PUBLIC_URL}/assets/art%20work/IMG_6746.jpg`,
+        alt: "Artwork IMG 6746 by Faezeh Ataeizadeh"
+      },
+      {
+        title: "Cam Photo",
+        year: "2024",
+        image: `${process.env.PUBLIC_URL}/assets/art%20work/camphoto_1804928587.jpg`,
+        alt: "Cam photo artwork by Faezeh Ataeizadeh"
+      }
+    ]
   },
   projects: {
     title: "Selected Projects",
